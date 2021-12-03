@@ -136,7 +136,8 @@ namespace Calculator
 
         private void CheckOperation()
         {
-            if (this.AnswerTextBlock.Text != "0")
+            if (this.AnswerTextBlock.Text != "0" &&
+                this.AnswerTextBlock.Text != "Error. Division by zero")
             {
                 this.NumbersTextBlock.Text = string.Empty;
                 this.NumbersTextBlock.Text = this.AnswerTextBlock.Text;
